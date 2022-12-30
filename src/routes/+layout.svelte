@@ -25,6 +25,17 @@
     min-width: 40em;
   }
 
+  @media (max-width: 400px) {
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav {
+      width: 20em;
+    }
+  }
+
   nav {
     display: flex;
     justify-content: space-between;

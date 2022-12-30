@@ -6,11 +6,11 @@
 
 <div class="container">
   <article>
-    <h1>{data.post.title}</h1>
+    <h1>{data.title}</h1>
     <div class="meta">
-      {data.post.author}, {data.post.created} {#if data.post.updated }, updated {data.post.updated} {/if}
+      {data.author}, {data.created} {#if data.updated }, updated {data.updated} {/if}
     </div>
-    <SvelteMarkdown source={data.post.content} />
+    <SvelteMarkdown source={data.content} />
   </article>
 </div>
 
